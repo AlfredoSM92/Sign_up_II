@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div id="login">
+            <h1 id="title">BoardMe</h1>
+            <div id="login__info">
+                <h3 id="login__subtitle">Already Signed up?</h3>
+                <p class="p__info">All users on MySpace will know that are millions of people out there. Every day
+                    besides so many
+                    people joining this community
+                </p>
+                <button id="login__button">LOG IN</button>
+            </div>
+        </div>
+        <div id="signup">
+            <h2 id="signup__subtitle">Sign Up for an account</h2>
+            <p class="p__info">Let's you all set up so you can start creating your first onboarding experience.</p>
+            <form id="signup__form" action="#">
+                <div id="user__info">
+                    <div class="username">
+                        <label for="FirstName">First name</label>
+                        <input class="userData" type="text" name="FirstName" id="firstName" placeholder="Your first name">
+                    </div>
+                    <div class="username">
+                        <label for="LastName">Last name</label>
+                        <input  class="userData" type="text" name="LastName" id="lastName" placeholder="Your last name">
+                    </div>
+                </div>
+                <label for="Email">Email</label>
+                <input  class="userData" type="email" name="Email" id="email" placeholder="Enter your email">
+                <label for="Password">Password</label>
+                <input  class="userData" type="password" name="Password" id="password" placeholder="Enter a strong password">
+                <div id="input__terms">
+                    <input type="checkbox" name="Terms" id="terms">
+                    <p>I accept BoardMe's <a href="#">Terms & Conditions</a></p>
+                </div>
+                <input type="submit" name="signup__button" id="signup__button" value="SIGN UP">
+                <!-- <button id="signup__button">SIGN UP</button> -->
+            </form>
+            
+            <section id="login__buttons">
+                <p id="login__options">Or sign up using</p>
+                <button class="options__buttons"><img class="logos" src="./images/Google__G__Logo.svg" alt=""></button>
+                <button class="options__buttons"><img class="logos" src="./images/icons8-facebook.svg" alt=""></button>
+                <button class="options__buttons"><img class="logos" src="./images/icons8-twitter.svg" alt=""></button>
+            </section>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+</body>
+</html>

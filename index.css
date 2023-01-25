@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(100deg, #3454DB 50%, white 30%);
+}
+
+#login {
+    width: 50vw;
+    min-height: 100vh;
+    /* background-color: #3454DB; */
+    color: #F2FAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#title {
+    font-size: 2.4rem;
+    padding: 2rem;
+}
+
+#login__subtitle {
+    font-size: 2rem;
+    margin:0 auto;
+    text-align: center;
+}
+
+#login__info{
+    margin-top: 10%;
+}
+
+.p__info {
+    padding: 1rem 15rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#login__button {
+    background-color: transparent;
+    color: #F2FAFA;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 1px solid #F2FAFA;
+    border-radius: 0.2em;
+    padding: 1.2rem;
+    width: 30%;
+    display: block;
+    margin: 3rem auto;
+    cursor: pointer;
+}
+
+#signup {
+    width: 50vw;
+    text-align: center;
+    color: #28304C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signup__subtitle{
+    margin-top: 10%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#signup__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem auto;
+}
+
+#user__info{
+    display: flex;
+    flex-direction: row;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #ABB2CA;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+#input__terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1.3rem;
+    gap: .5rem;
+    font-size: 1rem;
+}
+
+#Terms{
+    width: 1rem;
+}
+
+a{
+    color: #3454DB;
+    text-decoration: none;
+}
+
+#signup__button {
+    background-color: #3454DB;
+    border-radius: .5rem;
+    color: #F2FAFA;
+    border: none;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#login__options{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: .5rem;
+    color: #858AA1;
+    margin-bottom: 1rem;
+}
+
+.options__buttons{
+    background-color: transparent;
+    border: 1px solid #ABB2CA;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    margin-inline: .5rem;
+    cursor: pointer;
+}
+
+.logos{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:1024px) {
+
+    #user__info{
+        flex-direction: column;
+    }
+
+    .p__info{
+        padding: 2rem 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 52.5%;
+    }
+
+    .p__info{
+        padding: 1rem 10rem;
+    }
+
+    #title {
+        padding: 2rem;
+    }
+
+    #signup__form {
+        margin-top: 1rem;
+    }
+    
+    .logos{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 560px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #3454DB 50%, white 50%);
+    }
+
+    #signup, #login {
+        width: 100vw;
+    }
+
+    #signup {
+        margin-top: 3rem;
+    }
+
+    #login__options{
+        margin-bottom: .5rem;
+    }
+
+    .options__buttons {
+        margin-bottom: 2rem;
+    }
+}
